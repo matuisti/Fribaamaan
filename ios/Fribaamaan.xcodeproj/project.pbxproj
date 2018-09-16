@@ -71,7 +71,7 @@
 		602D26322140237C009F25B5 /* AIRGoogleMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D26192140237C009F25B5 /* AIRGoogleMap.m */; };
 		602D26332140237C009F25B5 /* AIRGoogleMapPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D261D2140237C009F25B5 /* AIRGoogleMapPolygon.m */; };
 		602D26342140237C009F25B5 /* AIRGMSMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D261E2140237C009F25B5 /* AIRGMSMarker.m */; };
-		60B1F9A8213C655500770D1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60B1F981213C655500770D1E /* GoogleService-Info.plist */; };
+		60E89941214EA2CB00DCBE2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E89940214EA2CB00DCBE2F /* GoogleService-Info.plist */; };
 		6965731E77524768A0E7EB81 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09EF10D78DDD4C61BB7EE351 /* Feather.ttf */; };
 		6ABF78BA11EB4F2491A96BDA /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F45711D1C724BFE9B666BEA /* FontAwesome.ttf */; };
 		6B3BCFB6EF0948DABEEBA91D /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1061D095613F47B2B4D4B9B8 /* Ionicons.ttf */; };
@@ -473,7 +473,7 @@
 		602D261D2140237C009F25B5 /* AIRGoogleMapPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapPolygon.m; sourceTree = "<group>"; };
 		602D261E2140237C009F25B5 /* AIRGMSMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGMSMarker.m; sourceTree = "<group>"; };
 		602D261F2140237C009F25B5 /* DummyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyView.h; sourceTree = "<group>"; };
-		60B1F981213C655500770D1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60E89940214EA2CB00DCBE2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		62AE8439D93D4F11B68BBD34 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		66C482CF5FE949528A1ED9C8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		6E80723C47844007A7B510D9 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
@@ -684,7 +684,7 @@
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				60B1F981213C655500770D1E /* GoogleService-Info.plist */,
+				60E89940214EA2CB00DCBE2F /* GoogleService-Info.plist */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -1404,7 +1404,6 @@
 				03651ADDD0134CC08CCAE015 /* SimpleLineIcons.ttf in Resources */,
 				BE0FC3DB8CED469F8E2B2A2F /* Zocial.ttf in Resources */,
 				A0FE1386281743B3A3C2587E /* FontAwesome5_Brands.ttf in Resources */,
-				60B1F9A8213C655500770D1E /* GoogleService-Info.plist in Resources */,
 				410EBF472AD24360B645589F /* FontAwesome5_Regular.ttf in Resources */,
 				6C288491FC2945AC9E3D2CED /* FontAwesome5_Solid.ttf in Resources */,
 				CC2F857F9C7A4C96A529874C /* Entypo.ttf in Resources */,
@@ -1413,6 +1412,7 @@
 				0D1D2811F4FB41B7ACB4A55E /* FontAwesome.ttf in Resources */,
 				2BF164A3951348A9B8EB672E /* Foundation.ttf in Resources */,
 				6FDFC17D3B884178B60DB4D4 /* Ionicons.ttf in Resources */,
+				60E89941214EA2CB00DCBE2F /* GoogleService-Info.plist in Resources */,
 				12E6567FEDD1471AA52CED8A /* MaterialCommunityIcons.ttf in Resources */,
 				A0D6E8B333F94B54BDFE1D5B /* MaterialIcons.ttf in Resources */,
 				1B5FB1659C2C49C085025970 /* Octicons.ttf in Resources */,
