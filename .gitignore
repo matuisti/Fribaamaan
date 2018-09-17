@@ -4,6 +4,9 @@
 
 # Xcode
 #
+
+ios/Pods/GoogleService-Info.plist
+
 build/
 *.pbxuser
 !default.pbxuser
