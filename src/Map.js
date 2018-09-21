@@ -7,14 +7,15 @@ import MapView from 'react-native-maps';
 import { Callout } from 'react-native-maps';
 import pinOrange from '../node_modules/native-base/Fonts/icons/pinOrange.png'
 //import {param} from './Scores'
-
 export default class Map extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
       currentUser: null,
-      coordinates: []
+      coordinates: [],
+      show: true,
     }
+    this.onMarkerPress = this.onMarkerPress.bind(this)
 }
 
 addData(){
@@ -27,80 +28,100 @@ addData(){
       time: time
     }
   ).then(() => {
-    //console.log('Data inserted!');
   }).catch((error) => {
     console.log(error);
   })
 }
 
-  componentDidMount() {
-    const { currentUser } = firebase.auth()
-    this.setState({ currentUser })
-    var query =firebase.database().ref('tracks')
-    query.on('value', (snapshot) => {
-      var response = [];
-      snapshot.forEach(function(childSnapshot) {
-        var key = childSnapshot.key;
-        var childData = childSnapshot.val();
-        response.push({ key: key, location: childData.location, title: childData.name });
-      });
-    this.setState({
-      coordinates: response
-    })
-    console.log(response);
-    });
-  }
+onMarkerPress = (e, title) => {
+  const { show } = this.state;
+  this.setState({show: !show})
+  console.log(e.nativeEvent.id, title);
 
-  render() {
-    return (
-      <View style={{flex: 1}}>
-      <MapView
-        style={styles.map}
-        showsUserLocation={true}
-        showsMyLocationButton={true}
-        followsUserLocation={true}
-        showCompass={true}
-        provider="google"
-        customMapStyle={mapStyleColorful}
-        initialRegion={{
-           longitude: 22.2668,
-           latitude: 60.4487,
-           latitudeDelta: 0.5,
-           longitudeDelta: 0.5,
-        }}>
-
-        { this.state.coordinates.map(({ key, location, title }) =>
-          <MapView.Marker
-            key={key}
-            coordinate={location}
-            title={title}
-            >
-            <Image
-              source={pinOrange}
-              style={{height: 32, width: 32}}
-              />
-            </MapView.Marker>
-          )
-        }
-
-        </MapView>
-      </View>
-    );
-  }
 }
 
-class MyCalloutView extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+componentDidMount() {
+  const { currentUser } = firebase.auth()
+  this.setState({ currentUser })
+  var query =firebase.database().ref('tracks')
+  query.on('value', (snapshot) => {
+    var response = [];
+    snapshot.forEach(function(childSnapshot) {
+      var key = childSnapshot.key;
+      var childData = childSnapshot.val();
+      response.push({ key: key, location: childData.location, title: childData.name });
+    });
+  this.setState({
+    coordinates: response
+  })
+  console.log(response);
+  });
+}
 
+render() {
+  if (true) {
+
+  }
+  return (
+    <View style={{flex: 1}}>
+    <MapView
+      style={styles.map}
+      showsUserLocation={true}
+      showsMyLocationButton={true}
+      followsUserLocation={true}
+      showCompass={true}
+      provider="google"
+      customMapStyle={mapStyleColorful}
+      initialRegion={{
+         longitude: 22.2668,
+         latitude: 60.4487,
+         latitudeDelta: 0.15,
+         longitudeDelta: 0.15,
+      }}>
+
+      {
+        this.state.coordinates.map(({key, location, title}) =>
+        <MapView.Marker
+          key={key}
+          identifier={key}
+          coordinate={location}
+          title={title}
+          onPress={(e) => {this.onMarkerPress(e, title)}}
+          >
+          <Image source={pinOrange} style={{
+              height: 32,
+              width: 32
+            }}/>
+        </MapView.Marker>)
+      }
+    </MapView>
+    { this.state.show && <GameView/>}
+  </View>);
+}
+}
+
+class GameView extends Component {
+  constructor(props){
+  		super(props);
+  		this.state = {
+        data: []
+  	  }
+  }
   render() {
-    //<MyCalloutView title={title}/>
+    console.log(this.props);
     return (
-      <View style={{backgroundColor: 'white', flexDirection:'row'}}>
-        <Text style={{flexWrap: 'wrap', flexGrow: 1,}}>{this.props.title}</Text>
-      </View>
-    );
+      <View style={{
+        top: 0,
+        width: '100%',
+        height: 100,
+        backgroundColor: 'orange',
+        opacity: 0.7,
+        position: 'absolute',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}>
+      <Text>JEps</Text>
+    </View>);
   }
 }
 

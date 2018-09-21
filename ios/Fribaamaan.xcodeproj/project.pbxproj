@@ -71,7 +71,10 @@
 		602D26322140237C009F25B5 /* AIRGoogleMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D26192140237C009F25B5 /* AIRGoogleMap.m */; };
 		602D26332140237C009F25B5 /* AIRGoogleMapPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D261D2140237C009F25B5 /* AIRGoogleMapPolygon.m */; };
 		602D26342140237C009F25B5 /* AIRGMSMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D261E2140237C009F25B5 /* AIRGMSMarker.m */; };
-		60E89941214EA2CB00DCBE2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E89940214EA2CB00DCBE2F /* GoogleService-Info.plist */; };
+		60ABE361214FCF63003B0E9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60ABE360214FCF63003B0E9F /* GoogleService-Info.plist */; };
+		60ABE3A1214FFAC8003B0E9F /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60ABE39F214FFA6B003B0E9F /* Dosis-ExtraLight.ttf */; };
+		60ABE3A2214FFACA003B0E9F /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60ABE39C214FFA6B003B0E9F /* Dosis-Light.ttf */; };
+		60ABE3A4214FFACF003B0E9F /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60ABE39D214FFA6B003B0E9F /* Dosis-Regular.ttf */; };
 		6965731E77524768A0E7EB81 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09EF10D78DDD4C61BB7EE351 /* Feather.ttf */; };
 		6ABF78BA11EB4F2491A96BDA /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F45711D1C724BFE9B666BEA /* FontAwesome.ttf */; };
 		6B3BCFB6EF0948DABEEBA91D /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1061D095613F47B2B4D4B9B8 /* Ionicons.ttf */; };
@@ -84,12 +87,14 @@
 		8E9E6813D115418DAD4D6736 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52D79CC4414A4F9AB6E3FDC9 /* EvilIcons.ttf */; };
 		8EB0D19FE7E340A2AAC85DD5 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 778705E503B14AADA1BEF673 /* EvilIcons.ttf */; };
 		910AFDEE0CA64550991C1691 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A04D4A419FE40AE898E6152 /* Octicons.ttf */; };
+		9DA516462D3144018745A43F /* pinOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E50108E6B89413B97419FCA /* pinOrange.png */; };
 		A0D6E8B333F94B54BDFE1D5B /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66C482CF5FE949528A1ED9C8 /* MaterialIcons.ttf */; };
 		A0FE1386281743B3A3C2587E /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E298C9431AD446E48DBA98F0 /* FontAwesome5_Brands.ttf */; };
 		ADA2241283B58FDDA9DCC91A /* libPods-Fribaamaan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC52803A1E18C98251AD7452 /* libPods-Fribaamaan.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		BE0E5F28FFBAA511E8C58BE5 /* libPods-Fribaamaan-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A19FCB97371F6F682AEDA0FD /* libPods-Fribaamaan-tvOS.a */; };
 		BE0FC3DB8CED469F8E2B2A2F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28C21F024B2A4FEABA56DD12 /* Zocial.ttf */; };
+		CBCE1D201BBA4D44AB07DC8B /* pinYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F6D4F30A4E410B8BEF8333 /* pinYellow.png */; };
 		CC2F857F9C7A4C96A529874C /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C37F2C804FCF43088753E591 /* Entypo.ttf */; };
 		EC9DB137D4BB434D895328B0 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97E931F00F5A4A9C9F5CAE03 /* MaterialIcons.ttf */; };
 		EF6D8B97098E4813A089B48D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB0987A97D254AF0BA104951 /* Feather.ttf */; };
@@ -421,6 +426,7 @@
 		2D02E47B1E0B4A5D006451C7 /* Fribaamaan-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fribaamaan-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Fribaamaan-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fribaamaan-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E50108E6B89413B97419FCA /* pinOrange.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = pinOrange.png; path = "../node_modules/native-base/Fonts/icons/pinOrange.png"; sourceTree = "<group>"; };
 		31E9F7CC0329E632AF5A522B /* Pods-FribaamaanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FribaamaanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FribaamaanTests/Pods-FribaamaanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		339C6CA806FF4531897A3576 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		447B4C42F3B9433DA5D203F8 /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
@@ -473,7 +479,10 @@
 		602D261D2140237C009F25B5 /* AIRGoogleMapPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGoogleMapPolygon.m; sourceTree = "<group>"; };
 		602D261E2140237C009F25B5 /* AIRGMSMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRGMSMarker.m; sourceTree = "<group>"; };
 		602D261F2140237C009F25B5 /* DummyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyView.h; sourceTree = "<group>"; };
-		60E89940214EA2CB00DCBE2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60ABE360214FCF63003B0E9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60ABE39C214FFA6B003B0E9F /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Light.ttf"; path = "../../../../Downloads/Dosis/Dosis-Light.ttf"; sourceTree = "<group>"; };
+		60ABE39D214FFA6B003B0E9F /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Regular.ttf"; path = "../../../../Downloads/Dosis/Dosis-Regular.ttf"; sourceTree = "<group>"; };
+		60ABE39F214FFA6B003B0E9F /* Dosis-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-ExtraLight.ttf"; path = "../../../../Downloads/Dosis/Dosis-ExtraLight.ttf"; sourceTree = "<group>"; };
 		62AE8439D93D4F11B68BBD34 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		66C482CF5FE949528A1ED9C8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		6E80723C47844007A7B510D9 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
@@ -501,6 +510,7 @@
 		E8120EC656A0443C931AE6EC /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		EC6D9E2B296F4E2C18A013BA /* Pods-Fribaamaan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fribaamaan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fribaamaan/Pods-Fribaamaan.debug.xcconfig"; sourceTree = "<group>"; };
 		F78944C75CE7D43CFEE6B3C2 /* Pods-FribaamaanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FribaamaanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FribaamaanTests/Pods-FribaamaanTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8F6D4F30A4E410B8BEF8333 /* pinYellow.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = pinYellow.png; path = "../node_modules/native-base/Fonts/icons/pinYellow.png"; sourceTree = "<group>"; };
 		FD5E3DA31C5C490693DF5F52 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -655,6 +665,8 @@
 				53E9523FE50F4A0EBBE83239 /* SimpleLineIcons.ttf */,
 				043BEB5A15AF4D01A28A9973 /* Zocial.ttf */,
 				AECCE0069BA24169BAFD8D9C /* Ionicons.ttf */,
+				2E50108E6B89413B97419FCA /* pinOrange.png */,
+				F8F6D4F30A4E410B8BEF8333 /* pinYellow.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -684,7 +696,7 @@
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				60E89940214EA2CB00DCBE2F /* GoogleService-Info.plist */,
+				60ABE360214FCF63003B0E9F /* GoogleService-Info.plist */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -796,6 +808,16 @@
 			path = "../node_modules/react-native-maps/lib/ios/AirGoogleMaps";
 			sourceTree = "<group>";
 		};
+		60ABE371214FFA43003B0E9F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				60ABE39F214FFA6B003B0E9F /* Dosis-ExtraLight.ttf */,
+				60ABE39C214FFA6B003B0E9F /* Dosis-Light.ttf */,
+				60ABE39D214FFA6B003B0E9F /* Dosis-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		60B1F949213C640D00770D1E /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -858,6 +880,7 @@
 			children = (
 				13B07FAE1A68108700A75B9A /* Fribaamaan */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				60ABE371214FFA43003B0E9F /* Fonts */,
 				00E356EF1AD99517003FC87E /* FribaamaanTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				602D25F52140237C009F25B5 /* AirGoogleMaps */,
@@ -1397,7 +1420,9 @@
 				6B3BCFB6EF0948DABEEBA91D /* Ionicons.ttf in Resources */,
 				70E5B94801CB47E4A9623F04 /* MaterialCommunityIcons.ttf in Resources */,
 				EC9DB137D4BB434D895328B0 /* MaterialIcons.ttf in Resources */,
+				60ABE3A1214FFAC8003B0E9F /* Dosis-ExtraLight.ttf in Resources */,
 				910AFDEE0CA64550991C1691 /* Octicons.ttf in Resources */,
+				60ABE3A4214FFACF003B0E9F /* Dosis-Regular.ttf in Resources */,
 				56C5392C74ED422794265A78 /* Roboto_medium.ttf in Resources */,
 				421862628CA74CE281E4BEEA /* Roboto.ttf in Resources */,
 				0D776F2A7437453EB9C819A0 /* rubicon-icon-font.ttf in Resources */,
@@ -1412,13 +1437,16 @@
 				0D1D2811F4FB41B7ACB4A55E /* FontAwesome.ttf in Resources */,
 				2BF164A3951348A9B8EB672E /* Foundation.ttf in Resources */,
 				6FDFC17D3B884178B60DB4D4 /* Ionicons.ttf in Resources */,
-				60E89941214EA2CB00DCBE2F /* GoogleService-Info.plist in Resources */,
+				60ABE361214FCF63003B0E9F /* GoogleService-Info.plist in Resources */,
 				12E6567FEDD1471AA52CED8A /* MaterialCommunityIcons.ttf in Resources */,
 				A0D6E8B333F94B54BDFE1D5B /* MaterialIcons.ttf in Resources */,
+				60ABE3A2214FFACA003B0E9F /* Dosis-Light.ttf in Resources */,
 				1B5FB1659C2C49C085025970 /* Octicons.ttf in Resources */,
 				32D0996C60A94F32AF7878E6 /* SimpleLineIcons.ttf in Resources */,
 				014314CBB7D84075ABBECF90 /* Zocial.ttf in Resources */,
 				733AC36C41AF42E9897B7859 /* Ionicons.ttf in Resources */,
+				9DA516462D3144018745A43F /* pinOrange.png in Resources */,
+				CBCE1D201BBA4D44AB07DC8B /* pinYellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2112,6 +2140,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "${BUILT_PRODUCTS_DIR}/libCordova.a";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

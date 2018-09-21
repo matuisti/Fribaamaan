@@ -24,7 +24,6 @@ export default (MainScreenNavigator = TabNavigator(
 
             <Button style={styles.footerBtn}
               rounded
-
               active={props.navigationState.index === 0 ? true : false}
               onPress={() => props.navigation.navigate("Scores")}>
               <View style={{

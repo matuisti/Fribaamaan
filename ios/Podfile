@@ -13,6 +13,8 @@ pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
 pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
 pod 'React', :path => '../node_modules/react-native', :subspecs => [
+  'Core',
+  'CxxBridge',  
   'RCTText',
   'RCTImage',
   'RCTNetwork',
@@ -20,13 +22,16 @@ pod 'React', :path => '../node_modules/react-native', :subspecs => [
 ]
 pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
 
+ # Third party deps podspec link
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
 #react-native-maps
 pod 'react-native-maps', :path => '../node_modules/react-native-maps'
 pod 'react-native-google-maps', :path => '../node_modules/react-native-maps'
 pod 'GoogleMaps'
 pod 'Google-Maps-iOS-Utils'
-
-pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
 
 target 'FribaamaanTests' do
     inherit! :search_paths
